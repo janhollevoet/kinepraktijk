@@ -10,7 +10,6 @@ body{
     font-family: Comfortaa, Helvetica, sans-serif;
     background-color: #f7f7f7;
     overflow-y: scroll;
-    line-height: 1.4em !important ;
 }
 main{
     left: 0;
@@ -210,10 +209,13 @@ nav.menu ul li a {
     
 }
 .content th, td {
+    border: 1px solid var(--main-bg-color);
     text-align: left;
     padding: 8px;
 }
-
+.content td{
+    background-color: white;
+}
 
 /*
 ---------- Start Comment-------------
@@ -438,7 +440,7 @@ form fieldset div input[type="submit"]:hover {
 /* Tablets (portrait and landscape) ----------- */
 @media only screen and (max-width : 1280px) {
     #specialisaties{
-        width: 35% !important;
+        width: 23% !important;
     }
     aside{
         visibility: hidden;
