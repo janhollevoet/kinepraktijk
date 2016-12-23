@@ -274,7 +274,7 @@ aside #info{
     width: 20%;
     position: absolute;
     top: 4.3em;
-    font-size: 1em !imporatant;
+    font-size: 1em !important;
 }
 #specialisaties ul {
     background-color: var(--main-bg-color);
