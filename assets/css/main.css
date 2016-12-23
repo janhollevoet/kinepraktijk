@@ -1,0 +1,486 @@
+:root{
+    --main-bg-color: #5C0009;
+    --main-hover-color: #990000;
+    --second-bg-color: #2F4B57 ;
+    --thirth-bg-color: lightgray ;
+    --aside-width: 25%;
+}
+body{
+    margin: 0;
+    font-family: Comfortaa, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    overflow-y: scroll;
+    line-height: 1.2em !importent ;
+}
+main{
+    left: 0;
+    top:0;
+    position: absolute;
+    width: calc(100% - var(--aside-width));
+}
+
+p{
+    margin-top: 1em;
+}
+/*
+---------- Start Comment-------------
+
+    HolleFrame
+
+---------- End   Comment-------------
+*/
+.row{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.column,.columns{
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.columns.four{
+
+}
+.full-width{
+    width: 75%;
+
+}
+.half-width{
+    width: 30%;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 100px 100px 100px var(--main-bg-color);
+}
+/*
+---------- Start Comment-------------
+
+    HEADER
+
+---------- End   Comment-------------
+*/
+header{
+    background-image: url(../../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+    width: 100%;
+}
+
+
+
+
+/*
+---------- Start Comment-------------
+
+    NAVIGATIEBAR
+
+---------- End   Comment-------------
+*/
+nav.menu{
+    background-color: var(--second-bg-color);
+}
+nav.menu:after{
+    content: '';
+    width: 100%;
+    height: 0.6em;
+    background-color: var(--main-bg-color);
+    display: block;
+}
+nav.menu ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: var(--second-bg-color);
+}
+nav.menu ul li{
+    text-decoration: none;
+    float: left;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -ms-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+}
+nav.menu > ul a.current{
+    border: 1px solid var(--main-bg-color);
+    background-color:var(--main-bg-color);
+    border-bottom: 0;
+    font-weight: 800;
+}
+nav.menu > ul a.current:hover{
+  color: var(--second-bg-color);
+}
+nav.menu ul a:hover{
+    color: var(--main-bg-color);
+}
+nav.menu ul li a {
+    font-weight: 400;
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 17px 40px;
+
+}
+#menu-icon{
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    color: var(--main-bg-color);
+    background-color: var(--second-bg-color);
+    visibility: hidden;
+
+}
+#menu-icon:hover{
+    box-shadow: 0 0 5px #660000;
+
+
+}
+/*
+---------- Start Comment-------------
+
+    CONTENT
+
+---------- End   Comment-------------
+*/
+
+.content{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    background-image: url(../../images/bg02.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100% 50em;
+
+
+}
+.content h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 1em 0 1em 0;
+}
+.content h2{
+    padding: 2em 0 2em 0;
+    font-size: 2em !important;
+    text-align: center;
+}
+.content ul{
+    padding-top: 1em;
+    padding-bottom: 1em
+}
+.content ul li{
+    margin-left: 2em;
+}
+.content table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    
+}
+.content th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+
+/*
+---------- Start Comment-------------
+
+    ASIDE
+
+---------- End   Comment-------------
+*/
+aside{
+    background-color: var(--thirth-bg-color) !important;
+    transition:  width 2s;
+    top: 0;
+    position: fixed;
+    right: 0;
+    width: var(--aside-width);
+    outline: 0;
+    height: 100vh;
+    border-left: 0.35em solid var(--main-bg-color);
+
+}
+aside img{
+    width: 100% ;
+
+}
+aside #info{
+    position: fixed;
+    bottom: 20em;
+    margin-top: 2em;
+    line-height: 1.5em;
+}
+aside iframe{
+    position: absolute;
+    width: 100%;
+    height: 18em;
+    bottom: 0;
+    right:0;
+}
+aside #info{
+    padding-left:10px;
+}
+
+#iconright{
+    visibility: hidden;
+    left: 0.1em;
+    color: var(--main-bg-color);
+    position: absolute;
+    top: 45vh;
+    cursor: pointer;
+}
+.adress{
+    line-height: 1em;
+}
+
+/*
+---------- Start Comment-------------
+
+    specialisaties Page
+
+---------- End   Comment-------------
+*/
+#specialisaties{
+    width: 20%;
+    position: absolute;
+    top: 4.3em;
+    font-size: 1em !imporatant;
+}
+#specialisaties ul {
+    background-color: var(--main-bg-color);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#specialisaties ul li:hover{
+
+    background-color: var(--main-hover-color);
+}
+#specialisaties ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1em;
+}
+#therapie{
+    float: right;
+    width: 72%;
+}
+#therapie article {
+    border: 1px solid #660000;
+    margin-bottom: 2em;
+    background-color: #fff;
+
+}
+#therapie article h2{
+    padding: 1em 0 1em 1em;
+    text-align: left;
+    border-bottom: 1px solid #660000;
+}
+#therapie article p{
+    padding: 1em 0 1em 1em;
+}
+
+
+/*
+---------- Start Comment-------------
+
+    Team Page
+
+---------- End   Comment-------------
+*/
+
+
+.team{
+    display: inline-block;
+    width: 100%;
+    margin: 2em;
+}
+
+.team .img{
+    width: 25%;
+    display: inline-block;
+}
+.img img{
+    max-width: 100%;
+    float: right;
+
+}
+.team .info{
+    width: 50%;
+    padding-left: 1.25em;
+    position: absolute;
+    display: inline-block;
+
+
+}
+.team h2,p{
+}
+.team h2{
+
+    padding:0.5em 0 0.5em 0;
+    text-align: left;
+}
+
+/*
+---------- Start Comment-------------
+
+    Contact Page
+
+---------- End   Comment-------------
+*/
+
+form{
+    padding-top: 2em !important;
+}
+form fieldset{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+form fieldset div{
+    display: block;
+
+    margin-bottom: 10px;
+    min-height: 40px;
+}
+form fieldset div  .field-style{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px;
+    min-height: 40px;
+    outline: none;
+    border: 1px solid #660000;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}form fieldset div  .field-style:focus{
+    box-shadow: 0 0 5px #660000;
+    border:1px solid #660000;
+}
+form fieldset div .field-split{
+    width: 49%;
+}
+form fieldset div .field-full{
+    width: 100%;
+}
+form fieldset div input.align-left{
+    float:left;
+}
+form fieldset div input.align-right{
+    float:right;
+}
+form fieldset div textarea{
+    width: 100%;
+    height: 100px;
+}
+
+form fieldset div input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px var(--main-bg-color);
+    -webkit-box-shadow: inset 0px 1px 0px 0px  var(--main-bg-color);
+    box-shadow: inset 0px 1px 0px 0px  var(--main-bg-color);
+    background-color:  var(--main-bg-color);
+    border: 1px solid   var(--main-bg-color);
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    text-decoration: none;
+}
+
+form fieldset div input[type="submit"]:hover {
+    background-color: #990000;
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (max-width : 1280px) {
+
+    aside{
+        visibility: hidden;
+    }
+    main{
+        width: 100%;
+
+    }
+
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 900px) {
+  #menu-icon{
+      visibility: visible;
+  }
+  nav.menu {
+      background-color: var(--thirth-bg-color);
+      -moz-transform: translateX(-275px);
+      -webkit-transform: translateX(-275px);
+      -ms-transform: translateX(-275px);
+      transform: translateX(-275px);
+      -moz-transition: -moz-transform 0.5s ease;
+      -webkit-transition: -webkit-transform 0.5s ease;
+      -ms-transition: -ms-transform 0.5s ease;
+      transition: transform 0.5s ease;
+      display: block;
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 275px;
+
+  }
+  nav.menu.toggle {
+      text-decoration: none;
+      border: 0;
+      left: 0;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      -moz-transform: translateX(0) !important;
+      -webkit-transform: translateX(0) !important;
+      -ms-transform: translateX(0) !important;
+      transform: translateX(0) !important;
+  }
+  #specialisaties{
+    visibility: hidden;
+
+  }
+  #therapie{
+    width: 100%;
+  }
+
+
+}
