@@ -3,6 +3,15 @@
 
 <head>
     <title>Kinesist Haasrode | Aanbod</title>
+     <script>
+      function toonTherapie(therapie) {
+         alert(therapie.id);
+         $( "li.menuitem" ).each(function( index ) {
+            alert(therapie.id);
+         });
+
+      }
+    </script>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -29,19 +38,19 @@
 
             <nav id="specialisaties">
                     <ul>
-                        <li><a href="#therapie1">Manuele therapie</a></li>
-                        <li><a href="#therapie2">Sportkinesitherapie</a></li>
-                        <li><a href="#therapie3">Rugschool</a></li>
-                        <li><a href="#therapie4">Postoperatieve therapie</a></li>
-                        <li><a href="#therapie5">Handrevalidatie</a></li>
-                        <li><a href="#therapie6">Evenwichtstherapie</a></li>
-                        <li><a href="#therapie7">Migraine / spanningshoofdpijn</a></li>
-                        <li><a href="#therapie8">Neurologische revalidatie</a></li>
-                        <li><a href="#therapie9">Taping, massage, fango en parafine, electrotherapie, …</a></li>
-                        <li><a href="#therapie10">Manuele lymfedrainage</a></li>
-                        <li><a href="#therapie11">Pre- en postnatale kinesitherapie</a></li>
-                        <li><a href="#therapie12">Ademhalingskinesitherapie</a></li>
-                        <li><a href="#therapie13">Littekentherapie</a></li>
+                        <li id="therapie1" class="menuitem" onclick="toonTherapie(this)"><a href="#therapie1">Manuele therapie</a></li>
+                        <li id="therapie2" class="menuitem" onclick="toonTherapie()"><a href="#therapie2">Sportkinesitherapie</a></li>
+                        <li id="therapie3" class="menuitem" onclick="toonTherapie()"><a href="#therapie3">Rugschool</a></li>
+                        <li id="therapie4" class="menuitem" onclick="toonTherapie()"><a href="#therapie4">Postoperatieve therapie</a></li>
+                        <li id="therapie4" class="menuitem" onclick="toonTherapie()"><a href="#therapie5">Handrevalidatie</a></li>
+                        <li id="therapie6" class="menuitem" onclick="toonTherapie()"><a href="#therapie6">Evenwichtstherapie</a></li>
+                        <li id="therapie7" class="menuitem" onclick="toonTherapie()"><a href="#therapie7">Migraine / spanningshoofdpijn</a></li>
+                        <li id="therapie8" class="menuitem" onclick="toonTherapie()"><a href="#therapie8">Neurologische revalidatie</a></li>
+                        <li id="therapie9" class="menuitem" onclick="toonTherapie()"><a href="#therapie9">Taping, massage, fango en parafine, electrotherapie, …</a></li>
+                        <li id="therapie10" class="menuitem" onclick="toonTherapie()"><a href="#therapie10">Manuele lymfedrainage</a></li>
+                        <li id="therapie11" class="menuitem" onclick="toonTherapie()"><a href="#therapie11">Pre- en postnatale kinesitherapie</a></li>
+                        <li id="therapie12" class="menuitem" onclick="toonTherapie()"><a href="#therapie12">Ademhalingskinesitherapie</a></li>
+                        <li id="therapie13" class="menuitem" onclick="toonTherapie()"><a href="#therapie13">Littekentherapie</a></li>
 
                     </ul>
 
@@ -51,10 +60,10 @@
                 <h1>Specialisaties</h1>
 
                 <section>
-                    <article>
+                    <article id="therapie1">
                         <a name="therapie1"></a>
                         <h2>Manuele therapie</h2>
-                        <p>Specifieke behandeling om storingen in het functioneren van het bewegingsapparaat te herstellen. Voorbeelden daarvan zijn mobilisaties en manipulatiesom de gewrichtsbeweeglijkheid.</p>
+                        <p>Specifieke behandeling om storingen in het functioneren van het bewegingsapparaat te herstellen. Voorbeelden daarvan zijn mobilisaties en manipulaties om de gewrichtsbeweeglijkheid te verbeteren.</p>
                         <div class="row">
                             <div class="columns">
                                 <img class="full-width" src="images/pic13.jpg" alt="foto 1">
@@ -81,7 +90,7 @@
                     <article>
                         <a name="therapie3"></a>
                         <h2>Rugschool</h2>
-                        <p>Veel mensen hebben last van de rug, vaak door verkeerde houding in het dagelijks leven (veel computerwerk, gebogen zitten,...). Onze therapie in de rugschool richt zich op het aanleren van alternatieve houdingen en bewegingen die beter zijn voor de rug en op het versterken van bepaalde spiergroepen.</p>
+                        <p>Veel mensen hebben last van de rug, vaak door verkeerde houding in het dagelijks leven (veel computerwerk, gebogen zitten, &hellip;). Onze therapie in de rugschool richt zich op het aanleren van alternatieve houdingen en bewegingen die beter zijn voor de rug en op het versterken van bepaalde spiergroepen.</p>
                         <div class="row">
                             <div class="columns">
                                 <img class="half-width" src="images/pic05.jpg" alt="foto 1">
@@ -91,12 +100,12 @@
                     <article>
                         <a name="therapie4"></a>
                         <h2>Postoperatieve therapie</h2>
-                        <p>Specifieke revalidatie na een operatie (knie- of heupprothese, voorste kruisband letsel,...).</p>
+                        <p>Specifieke revalidatie na een operatie (knie- of heupprothese, voorste kruisband letsel, &hellip;</p>
                     </article>
                     <article>
                         <a name="therapie5"></a>
                         <h2>Handrevalidatie</h2>
-                        <p>Specifieke revalidatie na handtrauma's (vb. peesletsels, diepe snijwonden,...).</p>
+                        <p>Specifieke revalidatie na handtrauma's (vb. peesletsels, diepe snijwonden, &hellip;).</p>
                         <div class="row">
                             <div class="columns">
                                 <img class="full-width" src="images/pic10.jpg" alt="foto 1">
@@ -122,12 +131,12 @@
                     <article>
                         <a name="therapie7"></a>
                         <h2>Migraine / spanningshoofdpijn</h2>
-                        <p>Behandeling van migraine en spanningshoofdpijn door middel van massage, manuele tractie, aroma therapie (munt) en oefeningen gericht op houdingscorrectie.</p>
+                        <p>Behandeling van migraine en spanningshoofdpijn door middel van massage, manuele tractie, aromatherapie (munt) en oefeningen gericht op houdingscorrectie.</p>
                     </article>
                     <article>
                         <a name="therapie8"></a>
                         <h2>Neurologische revalidatie</h2>
-                        <p>Specifieke revalidatie na aandoeningen van de hersenen of het zenuwstelsel zoals bijvoorbeeld een hersenbloeding (CVA), multiple sclerose(MS), ziekte van Parkinson, plexusletsels.</p>
+                        <p>Specifieke revalidatie na aandoeningen van de hersenen of het zenuwstelsel zoals bijvoorbeeld een hersenbloeding (CVA), multiple sclerose (MS), ziekte van Parkinson, plexusletsels.</p>
                     </article>
                     <article>
                         <a name="therapie9"></a>
@@ -150,7 +159,7 @@
                     <article>
                         <a name="therapie11"></a>
                         <h2>Pre- en postnatale kinesitherapie</h2>
-                        <p>Na een bevalling heeft u recht op 9 sessies. De eerste sessie wordt ingepland een maand voor de bevalling. De overige 8 sessies worden 4 tot 6 weken na de bevalling ingepland In die sessies worden de bekkenbodemspieren en de buikspieren teverstevigd en wordt de algemene conditie opgebouwd.</p>
+                        <p>Na een bevalling heeft u recht op 9 sessies. De eerste sessie wordt ingepland een maand voor de bevalling. De overige 8 sessies worden 4 tot 6 weken na de bevalling ingepland. In die sessies worden de bekkenbodemspieren en de buikspieren verstevigd en wordt de algemene conditie opgebouwd.</p>
                     </article>
                     <article>
                         <a name="therapie12"></a>
@@ -171,12 +180,12 @@
     <aside>
         <img src="images/logo.png" alt="Logo">
         <div id="info">
-            <p>T. 016 40 57 24</p>
-            <p>M. 0498 40 34 21 </p>
-            <p>kinepraktijkhaasrode@hotmail.com</p>
-            <p>Verbindingsstraat 12</p>
-            <p>3053 Haasrode</p>
-
+            <ul class="fa-ul">
+               <li><i class="fa-li fa fa-phone"></i>016 40 57 24</li>
+               <li><i class="fa-li fa fa-mobile-phone"></i>0498 40 34 21</li>
+               <li><i class="fa-li fa fa-envelope"></i>kinepraktijkhaasrode@hotmail.com</li>
+               <li><i class="fa-li fa fa-home"></i>Verbindingsstraat 12<br> B-3053 Haasrode</li>
+            </ul>
         </div>
         <i class="fa fa-3x fa-chevron-right" aria-hidden="true" id="iconright"></i>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1059.489036961536!2d4.730076972405353!3d50.832945749585555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ee208f41ec66b28!2sVan+Den+Abeele+%2F+Veerle!5e0!3m2!1snl!2sbe!4v1478886833530" allowfullscreen></iframe>

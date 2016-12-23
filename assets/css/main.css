@@ -10,7 +10,7 @@ body{
     font-family: Comfortaa, Helvetica, sans-serif;
     background-color: #f7f7f7;
     overflow-y: scroll;
-    line-height: 1.2em !importent ;
+    line-height: 1.4em !important ;
 }
 main{
     left: 0;
@@ -330,6 +330,7 @@ aside #info{
 .team .img{
     width: 25%;
     display: inline-block;
+    float: left;
 }
 .img img{
     max-width: 100%;
@@ -339,7 +340,6 @@ aside #info{
 .team .info{
     width: 50%;
     padding-left: 1.25em;
-    position: absolute;
     display: inline-block;
 
 
@@ -382,6 +382,7 @@ form fieldset div  .field-style{
     min-height: 40px;
     outline: none;
     border: 1px solid #660000;
+    font-family: Comfortaa, Helvetica, sans-serif;
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
@@ -419,11 +420,13 @@ form fieldset div input[type="submit"] {
     color: #FFFFFF;
     padding: 8px 18px;
     text-decoration: none;
+    font-family: Comfortaa, Helvetica, sans-serif;
 }
 
 form fieldset div input[type="submit"]:hover {
     background-color: #990000;
 }
+
 
 /* Tablets (portrait and landscape) ----------- */
 @media only screen and (max-width : 1280px) {
