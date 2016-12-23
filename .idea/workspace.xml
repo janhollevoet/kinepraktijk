@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b13f1162-79e1-46c1-ba26-de3a68c03f56" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/banner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="kinepraktijk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="aanbod.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aanbod.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aanbod.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -37,6 +32,16 @@
                 <element signature="e#4893#4901#0" expanded="true" />
                 <element signature="e#5165#5173#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="351" column="21" selection-start-line="351" selection-start-column="21" selection-end-line="351" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -481,14 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="363" column="27" selection-start-line="363" selection-start-column="22" selection-end-line="363" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aanbod.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -498,6 +495,14 @@
             <element signature="e#4893#4901#0" expanded="true" />
             <element signature="e#5165#5173#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="351" column="21" selection-start-line="351" selection-start-column="21" selection-end-line="351" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
