@@ -19,6 +19,10 @@ main{
     width: calc(100% - var(--aside-width));
 }
 
+footer{
+    text-align: center;
+    background-color: var(--thirth-gb-color);
+}
 p{
     margin-top: 1em;
 }
@@ -271,9 +275,8 @@ aside #info{
 ---------- End   Comment-------------
 */
 #specialisaties{
-    width: 20%;
-    position: absolute;
-    top: 4.3em;
+    width: 17.5%;
+    position: fixed;
     font-size: 1em !important;
 }
 #specialisaties ul {
@@ -281,6 +284,9 @@ aside #info{
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+#specialisaties ul li{
+    margin-left: 0;
 }
 #specialisaties ul li:hover{
 
@@ -290,7 +296,9 @@ aside #info{
     text-decoration: none;
     color: white;
     display: block;
-    padding: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    
+    
 }
 #therapie{
     float: right;
@@ -323,7 +331,6 @@ aside #info{
 
 .team{
     display: inline-block;
-    width: 100%;
     margin: 2em;
 }
 
@@ -430,7 +437,9 @@ form fieldset div input[type="submit"]:hover {
 
 /* Tablets (portrait and landscape) ----------- */
 @media only screen and (max-width : 1280px) {
-
+    #specialisaties{
+        width: 35% !important;
+    }
     aside{
         visibility: hidden;
     }
@@ -444,25 +453,33 @@ form fieldset div input[type="submit"]:hover {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 900px) {
-  #menu-icon{
-      visibility: visible;
-  }
-  nav.menu {
-      background-color: var(--thirth-bg-color);
-      -moz-transform: translateX(-275px);
-      -webkit-transform: translateX(-275px);
-      -ms-transform: translateX(-275px);
-      transform: translateX(-275px);
-      -moz-transition: -moz-transform 0.5s ease;
-      -webkit-transition: -webkit-transform 0.5s ease;
-      -ms-transition: -ms-transform 0.5s ease;
-      transition: transform 0.5s ease;
-      display: block;
-      height: 100vh;
-      left: 0;
-      position: fixed;
-      top: 0;
-      width: 275px;
+    
+    
+    #menu-icon{
+        visibility: visible;
+        
+    }
+    #menu-icon.toggle{
+        transform: translateX(290px);
+        transition: transform 0.5s ease;
+        
+    }
+    nav.menu {
+        background-color: var(--thirth-bg-color);
+        -moz-transform: translateX(-275px);
+        -webkit-transform: translateX(-275px);
+        -ms-transform: translateX(-275px);
+        
+        -moz-transition: -moz-transform 0.5s ease;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        -ms-transition: -ms-transform 0.5s ease;
+        transition: transform 0.5s ease;
+        display: block;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 275px;
 
   }
   nav.menu.toggle {
@@ -486,4 +503,22 @@ form fieldset div input[type="submit"]:hover {
   }
 
 
+    .team .info h2{
+        padding-top: 0;
+    }
+    .team .info{
+        width: 69% !important;
+    }
+}
+@media only screen and (max-width : 480px) {
+    .team .img{
+        width: 100% !important;
+    }
+    .team .info{
+        padding-left: 0;
+        width: 100% !important;
+    }
+    .team .info h2 {
+        margin-top: 0.5em;
+    }
 }
