@@ -10,7 +10,7 @@ body{
     font-family: Comfortaa, Helvetica, sans-serif;
     background-color: #f7f7f7;
     overflow-y: scroll;
-    line-height: 1.4em !important ;
+    line-height: 1.4em !importent ;
 }
 main{
     left: 0;
@@ -19,6 +19,10 @@ main{
     width: calc(100% - var(--aside-width));
 }
 
+footer{
+    text-align: center;
+    background-color: var(--thirth-gb-color);
+}
 p{
     margin-top: 1em;
 }
@@ -323,7 +327,6 @@ aside #info{
 
 .team{
     display: inline-block;
-    width: 100%;
     margin: 2em;
 }
 
@@ -444,25 +447,32 @@ form fieldset div input[type="submit"]:hover {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 900px) {
-  #menu-icon{
-      visibility: visible;
-  }
-  nav.menu {
-      background-color: var(--thirth-bg-color);
-      -moz-transform: translateX(-275px);
-      -webkit-transform: translateX(-275px);
-      -ms-transform: translateX(-275px);
-      transform: translateX(-275px);
-      -moz-transition: -moz-transform 0.5s ease;
-      -webkit-transition: -webkit-transform 0.5s ease;
-      -ms-transition: -ms-transform 0.5s ease;
-      transition: transform 0.5s ease;
-      display: block;
-      height: 100vh;
-      left: 0;
-      position: fixed;
-      top: 0;
-      width: 275px;
+    
+    #menu-icon{
+        visibility: visible;
+        
+    }
+    #menu-icon.toggle{
+        transform: translateX(290px);
+        transition: transform 0.5s ease;
+        
+    }
+    nav.menu {
+        background-color: var(--thirth-bg-color);
+        -moz-transform: translateX(-275px);
+        -webkit-transform: translateX(-275px);
+        -ms-transform: translateX(-275px);
+        
+        -moz-transition: -moz-transform 0.5s ease;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        -ms-transition: -ms-transform 0.5s ease;
+        transition: transform 0.5s ease;
+        display: block;
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 275px;
 
   }
   nav.menu.toggle {
@@ -486,4 +496,22 @@ form fieldset div input[type="submit"]:hover {
   }
 
 
+    .team .info h2{
+        padding-top: 0;
+    }
+    .team .info{
+        width: 69% !important;
+    }
+}
+@media only screen and (max-width : 480px) {
+    .team .img{
+        width: 100% !important;
+    }
+    .team .info{
+        padding-left: 0;
+        width: 100% !important;
+    }
+    .team .info h2 {
+        margin-top: 0.5em;
+    }
 }
