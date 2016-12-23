@@ -279,8 +279,7 @@ aside #info{
 #specialisaties{
     width: 17.5%;
     position: fixed;
-    
-    font-size: 1em !imporatant;
+    font-size: 1em !important;
 }
 #specialisaties ul {
     background-color: var(--main-bg-color);
